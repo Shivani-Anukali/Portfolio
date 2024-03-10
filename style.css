@@ -1,0 +1,213 @@
+*{
+    margin:0px ;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: black;
+    overflow-y: auto;
+}
+#header .profile img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 15px auto;
+    display: block;
+    border: 3px solid yellow;
+}
+.profile img{
+    transition: all 1s;
+}
+.profile img:hover{
+    transform: scale(1.1,1.1);
+}
+#header .profile h1{
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    text-align-last: center;
+    text-shadow: 5px 5px 10px deeppink;
+    transition: all 1s;
+}
+.profile h1:hover{
+    color: cyan;
+    transform: scale(1.2,1.2);
+}
+#header .social-links a{
+    height: 36px;
+    width: 36px;
+    font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50px;
+    text-align: center;
+    transition: 0.3s;
+    text-decoration: none;
+} 
+#header .profile .social-links a:hover{
+    background: #149ddd;
+    color: #fff;
+    text-decoration: none;
+}
+/*-------navbar-------*/
+.navbar{
+    padding-top: 30px;   
+}
+
+.navbar *{
+    width: 100px;
+    border-radius: 20px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.navbar > ul > li{
+    position: relative;
+    white-space: nowrap;
+}
+.navbar a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #a8a9b4;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+.navbar a i{
+    font-size: 25px;
+    padding-right: 8px;
+    color: #6f7180;
+}
+.navbar a:hover i,
+.navbar .active > a i,
+.navbar li:hover > a i{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar a:hover i,
+.navbar .active > a i,
+.navbar li:hover > a i{
+    text-decoration: none;
+    color:#149ddd;
+}
+.navbar ul li a span{
+    color: #fff;
+    transition: all 1s;
+}
+.navbar ul li a span:hover{
+    color:darkgoldenrod;
+    transform: scale(1.1,1.1);
+}
+#hero{
+    width: 100%;
+    height: 100vh;
+    background: url('https://t3.ftcdn.net/jpg/06/96/64/36/360_F_696643615_MzrvLONolngkeDLiSVjIgjOlQwAA875M.jpg')top center;
+    background-size: cover;
+    background-position: center;
+}
+#hero::before{
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: o;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#hero .hero-container{
+    position: relative;
+    z-index: 1;
+    min-width: 300px;
+}
+#hero h1{
+    margin: 0 0 10px 0;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 56px; 
+    transition: all 2s; 
+}
+#hero h1:hover{
+    transform: scale(1.2,1.2);
+}
+#hero p{
+    margin-bottom: 50px;
+    font-size: 34px;
+    font-weight: 300px;
+    transition: all 2s;
+}
+#hero p:hover{
+    transform: scale(1.2,1.2);
+}
+#about-image img{
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    margin-top: 80px;
+    display: block;
+    border: 3px solid green;
+}
+#about ul{
+    list-style: none;
+    padding: 0px;
+}
+#about ul li{
+    padding-bottom: 10px;
+}
+#about ul li{
+    font-size: 20px;
+    padding-right: 2px;
+}
+#about-image img{
+    transition: all 1s;
+}
+#about-image img:hover{
+    transform: scale(1.2,1.2);
+}
+#submit button{
+    transition: all 2s;
+}
+#submit button:hover{
+    background-color: magenta;
+    transform: scale(1.2,1.2);
+}
+.form{
+    width: 400px;
+    background-color: hsl(28,91%,79%);
+}
+#sl .social-links a{
+    height: 36px;
+    width: 36px;
+    font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50px;
+    text-align: center;
+    transition: 0.3s;
+    text-decoration: none;
+} 
+#sl .social-links a:hover{
+    background:#149ddd;
+    color: #fff;
+    text-decoration: none;
+}
